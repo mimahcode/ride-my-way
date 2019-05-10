@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 a{
     text-decoration: none;
     color: #2b5b9b;
@@ -7,10 +12,11 @@ h1,h4{
     text-align: center;
     font-family: 'Gugi', cursive;
     color:#2b5b9b; 
+    padding: 5px;
 }
 hr{
     height:1px;
-    width:150px; 
+    /* width:200px;  */
     color:#2b5b9b; 
     background-color: black;
 }
@@ -49,6 +55,7 @@ hr{
 }
 .wrapper{
     text-align: center;
+    margin: 70px;
 }
 label{
     font-size: 18px;
@@ -59,4 +66,43 @@ label{
 #alertEmail, #alertPassword {
     color: red;
     font-size: 12px;
+}
+#sidebar{
+    width: 200px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #050505;
+    position: fixed;
+    left: -200px;
+    transition: all 500ms linear;
+}
+#sidebar.active{
+    left: 0px;
+}
+#sidebar ul li{
+    color: #EDEEED;
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+#sidebar .toggleBtn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+#sidebar .toggleBtn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px 0px;
+    background-color: #050505;
+    border-radius: 2px;
+}
+
+/* MAP STYLES */
+#mapid { 
+    height: 100%;
+    width: 100%;
+    padding: 230px;
 }
