@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Profile</title>
+
+        <!-- CSS LINKS -->
+        <link href="https://fonts.googleapis.com/css?family=Gugi|Poppins|Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    </head>
+    <body>
+        <div>
+            <div>
+                <nav class="nav">
+                    <h3 class="brand">R<span>My</span>W</h3>
+                    <ul>
+                        <li id="home"><a href="#.html">Home</a></li>
+                        <li id="abt"><a href="#.html">About</a></li>
+                        <li id="contact"><a href="#.html">Contact</a></li>
+                        <li ><div id="offerBtn"><a href="login.html">Add offer</a></div></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="sidebar">
+                <div id="toggleBtn" class="toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   
+                </div>
+                <div id="profilenav">
+                    <ul>
+                        <li>
+                            <img src="images/user1.png" id="profImage"><br>
+                            <label id="username">John Doe</label><br>
+                            <label id="ride">Rides</label>
+                            <div>
+                                <div id="taken">
+                                    <label>Taken</label>
+                                    <label class="num">5</label>
+                                </div>
+                                <div id="given">
+                                        <label>Given</label>
+                                        <label class="num">7</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Available Rides</li>
+                        <li>View Rides given</li>
+                        <li>View Rides given</li>
+                        <li>Requests</li>
+                    </ul> 
+                </div>
+                
+            </div>
+        </div>
+        <div id="searchContainer">
+            <input type="search" placeholder="Where to?" id="search">
+        </div>
+        <table class="list" id="list">
+            <tr>
+                <th colspan="6" class="thead">
+                    <h2> Available Rides</h2>
+                </th>
+            </tr>
+                <tr>
+                    <th>S/N</th>
+                    <th>Driver Name</th>
+                    <th>Trip direction</th>
+                    <th>Date</th>
+                    <th colspan="2">Time</th>
+                </tr>
+                <tr>
+                        <td>01</td>
+                        <td>Basil Ngomoi</td>
+                        <td>Africana, Dar es Salaam</td>
+                        <td>03.02.2019</td>
+                        <td>04:30 p.m</td>
+                        <td><button class="request">request</button></td>
+                    </tr>
+                    <tr>
+                            <td>02</td>
+                            <td>Angela Njogopa</td>
+                            <td>Kariakoo, Dar es Salaam</td>
+                            <td>12.03.2019</td>
+                            <td>09:26 a.m</td>
+                            <td><button class="request">request</button></td>
+                        </tr>
+                        <tr>
+                                <td>03</td>
+                                <td>Gladys Xavier</td>
+                                <td>Mbweni, Dar es Salaam</td>
+                                <td>17.04.2019</td>
+                                <td>07:48 p.m</td>
+                                <td><button class="request">request</button></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Maria Desus</td>
+                                <td>Lushoto, Tanga</td>
+                                <td>18.04.2019</td>
+                                <td>07:08 a.m</td>
+                                <td><button class="request">request</button></td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>Larry Jones</td>
+                                <td>Makumbusho, Dar es Salaam</td>
+                                <td>30.04.2019</td>
+                                <td>04:28 p.m</td>
+                                <td><button class="request">request</button></td>
+                            </tr>
+                    
+            </table>
+            
+    </body>
+    <script type="text/javascript" src="JS/map.js"></script>
+</html>
