@@ -165,7 +165,7 @@ nav ul li a{
 }
 table {
     position: absolute;
-    width: 95%;
+    width: 90%;
     margin-top: 10%;
     text-align: left;
     left: 3%;
@@ -317,9 +317,24 @@ left: 0px;
     color: #ffffff;
     font-weight: 400;
 }
-.request{
+.request, .accept{
     background-color: #358a1b;
     border-color: #358a1b;
+    border: 1px solid transparent;
+    margin: 0 3rem;
+    display: block;
+    width: 40%;
+    padding: 10px 16px;
+    line-height: 1.3333333;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.reject{
+    background-color: #b91515;
+    border-color: #b91515;
     border: 1px solid transparent;
     margin: 0 3rem;
     display: block;
