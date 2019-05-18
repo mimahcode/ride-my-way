@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="availableRides.html">Available rides</a></li>
+                        <li>Available Rides</li>
                         <li>View Rides given</li>
                         <li>View Rides given</li>
                         <li>Requests</li>
@@ -53,10 +53,13 @@
                 
             </div>
         </div>
+        <div id="searchContainer">
+            <input type="search" placeholder="Where to?" id="search">
+        </div>
         <table class="list" id="list">
             <tr>
-                <th colspan="5" class="thead">
-                    <h2> List of Rides Taken</h2>
+                <th colspan="6" class="thead">
+                    <h2> Available Rides</h2>
                 </th>
             </tr>
                 <tr>
@@ -64,7 +67,7 @@
                     <th>Driver Name</th>
                     <th>Trip direction</th>
                     <th>Date</th>
-                    <th>Time</th>
+                    <th colspan="2">Time</th>
                 </tr>
                 <tr>
                         <td>01</td>
@@ -72,6 +75,7 @@
                         <td>Africana, Dar es Salaam</td>
                         <td>03.02.2019</td>
                         <td>04:30 p.m</td>
+                        <td><button class="request">request</button></td>
                     </tr>
                     <tr>
                             <td>02</td>
@@ -79,6 +83,7 @@
                             <td>Kariakoo, Dar es Salaam</td>
                             <td>12.03.2019</td>
                             <td>09:26 a.m</td>
+                            <td><button class="request">request</button></td>
                         </tr>
                         <tr>
                                 <td>03</td>
@@ -86,6 +91,7 @@
                                 <td>Mbweni, Dar es Salaam</td>
                                 <td>17.04.2019</td>
                                 <td>07:48 p.m</td>
+                                <td><button class="request">request</button></td>
                             </tr>
                             <tr>
                                 <td>04</td>
@@ -93,6 +99,7 @@
                                 <td>Lushoto, Tanga</td>
                                 <td>18.04.2019</td>
                                 <td>07:08 a.m</td>
+                                <td><button class="request">request</button></td>
                             </tr>
                             <tr>
                                 <td>05</td>
@@ -100,6 +107,7 @@
                                 <td>Makumbusho, Dar es Salaam</td>
                                 <td>30.04.2019</td>
                                 <td>04:28 p.m</td>
+                                <td><button class="request">request</button></td>
                             </tr>
                     
             </table>
