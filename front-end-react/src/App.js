@@ -6,15 +6,17 @@ import AvailableRides from './Pages/AvailableRides';
 import { Switch, Route } from 'react-router-dom';
 import TableDiv from './components/TableDiv';
 import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 const App = () => (
   <div className='app'>
     <Switch>
-        <Route path='/Landing' component={Landing}></Route>
-        <Route exact path='/' component={Profile}></Route>
+        <Route exact path='/' component={Landing}></Route>
+        <Route path='/Profile' component={Profile}></Route>
         <Route path='/AvailableRides' component={AvailableRides}></Route>
         <Route path='/TableDiv' component={TableDiv}></Route>
         <Route path='/Login' component={Login}></Route>
+        <Route path='/Signup' component={Signup}></Route>
       </Switch>
     {/* <Login /> */}
   </div>
