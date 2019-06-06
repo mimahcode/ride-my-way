@@ -4,7 +4,7 @@ export default class MainHeader extends Component {
     render() {
         return (
             <td colspan="5" className="thead">
-                <h2> List of Rides Taken</h2>
+                <h2> {this.props.tableTitle}</h2>
             </td>
         )
     }

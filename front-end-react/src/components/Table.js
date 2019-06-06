@@ -8,21 +8,28 @@ export default class Table extends Component {
         super(props);
         this.state = {
             animate1: false,
+            title: 'List of Rides Taken',
+            changeTable1: this.props.changeTable,
         }
+        // this.showTable = this.showTable.bind(this);
     }
+    // showTable(e) {
+    //     this.props.showTables(e);
+    // }
     render() {
-        let productsArray = Object.keys(this.props.products).map((pid) => this.props.products[pid])
-        let rows = productsArray.map((product) => {
+        const style = this.state.changeTable1 ? { display: 'none' } : {};
+        let productsTArray = Object.keys(this.props.productsT).map((pid) => this.props.productsT[pid])
+        let rows = productsTArray.map((product) => {
             return (
                 <ListItem product={product} keys={product.id} />
             )
         })
         return (
             <div>
-                <table>
+                <table style={style}>
                     <thead>
                         <tr>
-                            <MainHeader />
+                            <MainHeader tableTitle={this.state.title} />
                         </tr>
                         <tr>
                             <ListHeader column='S/N' />

@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import user1 from '../Images/user1.png';
 import ToggleBtn from './ToggleBtn';
-
+import { NavLink } from 'react-router-dom';
 
 export default class Menu extends Component {
     constructor(props) {
         super(props);
         this.state = {
             animate1: false,
+            // isHidden: false,
         }
         this.showSideBar = this.showSideBar.bind(this);
+        this.showTableT = this.showTableT.bind(this);
+        this.showTableG = this.showTableG.bind(this);
     }
     showSideBar(e) {
         this.setState((prevState) => {
@@ -17,6 +20,12 @@ export default class Menu extends Component {
                 animate1: !prevState.animate1
             }
         });
+    }
+    showTableT(e,changeT){
+        this.props.showTableT(e,changeT);
+    }
+    showTableG(e,changeG){
+        this.props.showTableG(e,changeG);
     }
     render() {
         const animationClasses = (this.state.animate1 ? 'active' : ' ');
@@ -40,14 +49,14 @@ export default class Menu extends Component {
                                 </div>
                             </div>
                         </li>
-                        <li><a href="availableRides.html">Available rides</a></li>
-                        <li>View Rides given</li>
-                        <li>View Rides given</li>
+                        <li><NavLink to='/AvailableRides'>Available rides</NavLink></li>
+                        <li> <NavLink to='/Landing'>View Rides given</NavLink></li>
+                        <li><NavLink to='/TableDiv'>View Rides taken</NavLink> </li>
                         <li><a href="requests.html">Requests</a></li>
                     </ul>
                 </div>
-
             </div>
+            
         )
     }
 }
