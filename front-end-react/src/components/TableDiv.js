@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Table from './Table';
+import Navigation from './Navigation';
+import AddOfferBtn from './AddOfferBtn';
+import Menu from './Menu';
 
 var taken = {
     '1': { id: 1, dName: 'Basil Ngomoi', direction: 'Africana, Dar es Salaam', date: '03.02.2019', time: '04:30 p.m' },
@@ -15,6 +18,9 @@ export default class TableDiv extends Component {
     render() {
         return (
             <div>
+                <Navigation/>
+                <AddOfferBtn/>
+                <Menu/>
                 <Table productsT={taken} id="tableT" showTableT={this.showTablesT}/>
             </div>
         )

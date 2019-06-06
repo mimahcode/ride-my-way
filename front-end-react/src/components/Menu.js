@@ -50,7 +50,7 @@ export default class Menu extends Component {
                             </div>
                         </li>
                         <li><NavLink to='/AvailableRides'>Available rides</NavLink></li>
-                        <li> <NavLink to='/Landing'>View Rides given</NavLink></li>
+                        <li> <NavLink to='/TableGDiv'>View Rides given</NavLink></li>
                         <li><NavLink to='/TableDiv'>View Rides taken</NavLink> </li>
                         <li><a href="requests.html">Requests</a></li>
                     </ul>

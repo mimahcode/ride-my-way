@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import TableGDiv from './components/TableGDiv';
 import Profile from './Pages/Profile';
 import Landing from './Pages/Landing';
 import AvailableRides from './Pages/AvailableRides';
@@ -15,10 +16,11 @@ const App = () => (
         <Route path='/Profile' component={Profile}></Route>
         <Route path='/AvailableRides' component={AvailableRides}></Route>
         <Route path='/TableDiv' component={TableDiv}></Route>
+        <Route path='/TableGDiv' component={TableGDiv}></Route>
         <Route path='/Login' component={Login}></Route>
         <Route path='/Signup' component={Signup}></Route>
       </Switch>
-    {/* <Login /> */}
+    {/* <TableGDiv /> */}
   </div>
 );
 
